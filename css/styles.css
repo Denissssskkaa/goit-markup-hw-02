@@ -1,17 +1,8 @@
-/* Base Reset & Normalize */
+/* General Styles */
 body {
-    font-family: 'Roboto', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f7f7f7;
-    color: #333;
-    line-height: 1.5;
-}
-
-h1,
-h2,
-h3,
-p {
+    font-family: "Roboto", sans-serif;
+    color: #434455;
+    background-color: #FFFFFF;
     margin: 0;
 }
 
@@ -26,34 +17,26 @@ a {
     color: inherit;
 }
 
-button {
-    font-family: inherit;
-    cursor: pointer;
-    border: none;
-    outline: none;
-}
-
-/* Container */
-.container {
-    max-width: 1128px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
 /* Header */
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #000;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+}
+
+.logo-highlight {
+    color: #2e2f42;
 }
 
 .nav-list {
@@ -62,211 +45,118 @@ button {
 }
 
 .nav-link {
-    font-size: 16px;
-    color: #555;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
     transition: color 0.3s ease;
 }
 
-.nav-link:hover {
-    color: #ff6b08;
-}
-
-.contact {
-    margin-top: 20px;
-    text-align: right;
-}
-
-.contact-link {
-    display: block;
-    font-size: 14px;
-    color: #555;
-    margin-bottom: 5px;
-}
-
-.contact-link:hover {
-    color: #ff6b08;
+.nav-link:hover,
+.nav-link:focus {
+    color: #404bbf;
 }
 
 /* Hero Section */
 .hero {
     text-align: center;
     padding: 60px 20px;
-    background-color: #2e2f42;
-    color: #fff;
+    background-color: #f4f4fd;
 }
 
 .hero-title {
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 20px;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
 }
 
 .btn {
-    background-color: #ff6b08;
-    color: #fff;
-    padding: 10px 20px;
+    background-color: #4d5ae5;
+    color: #FFFFFF;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
     font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    padding: 10px 20px;
+    border: none;
     border-radius: 5px;
+    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.btn:hover {
-    background-color: #e65a00;
-}
-
-/* Advantages Section */
-.advantages {
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.section-title {
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 30px;
-    color: #434455;
-}
-
-.advantages-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.advantages-item {
-    flex: 1 1 calc(25% - 20px);
-    max-width: 260px;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.advantages-title {
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.advantages-text {
-    font-size: 14px;
-    line-height: 1.5;
-    color: #666;
-}
-
-/* Team Section */
-.team {
-    padding: 40px 20px;
-    text-align: center;
-    background-color: #f9f9f9;
-}
-
-.team-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.team-item {
-    flex: 1 1 calc(25% - 20px);
-    max-width: 260px;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.team-photo {
-    border-radius: 50%;
-    margin-bottom: 15px;
-    width: 100%;
-    max-width: 120px;
-}
-
-.team-name {
-    font-size: 18px;
-    font-weight: 600;
-}
-
-.team-role {
-    font-size: 14px;
-    color: #666;
+.btn:hover,
+.btn:focus {
+    background-color: #404bbf;
 }
 
 /* Portfolio Section */
 .portfolio {
     padding: 40px 20px;
+    background-color: #F4F4FD;
+}
+
+.section-title {
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    text-transform: capitalize;
     text-align: center;
 }
 
 .portfolio-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /* 3 колонки */
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
-    /* Відстань між елементами */
     justify-content: center;
 }
 
 .portfolio-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
 }
 
-.portfolio-image {
-    width: 100%;
-    max-width: 320px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.portfolio-image:hover {
-    transform: scale(1.05);
-}
-
-.portfolio-caption {
+.portfolio-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
     margin-top: 10px;
-    font-size: 14px;
-    color: #555;
 }
 
-/* Footer Section in Portfolio */
-.portfolio-footer {
-    margin-top: 40px;
-    padding: 40px 20px;
+.portfolio-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+/* Footer */
+.footer {
     background-color: #2e2f42;
-    color: #fff;
-    text-align: left;
-    /* Гарантоване вирівнювання тексту ліворуч */
-    position: relative;
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-    /* Хвилястий фон */
+    color: #FFFFFF;
+    padding: 40px 20px;
+    text-align: center;
 }
 
-.footer-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
+.footer-logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
-    display: block;
-    /* Встановлюємо заголовок як блоковий елемент */
+    color: #4d5ae5;
 }
 
-.footer-title .highlight {
-    color: #007bff;
-    /* Синій колір для слова "WEB" */
+.footer-highlight {
+    color: #f4f4fd;
 }
 
 .footer-text {
     font-size: 16px;
     line-height: 1.5;
-    max-width: 500px;
-    margin: 0;
-    /* Забезпечує нульовий відступ */
+    letter-spacing: 0.02em;
+    margin-top: 10px;
 }
