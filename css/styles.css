@@ -1,16 +1,10 @@
+
 body {
     font-family: "Roboto", sans-serif;
     margin: 0;
     padding: 0;
     color: #434455;
     background-color: #FFFFFF;
-}
-
-h1,
-h2,
-h3,
-p {
-    margin: 0;
 }
 
 ul {
@@ -24,6 +18,7 @@ a {
     color: inherit;
 }
 
+/* --- HEADER --- */
 .header {
     display: flex;
     justify-content: space-between;
@@ -46,6 +41,11 @@ a {
     color: #2e2f42;
 }
 
+.contact {
+    font-style: normal;
+}
+
+/* --- НАВІГАЦІЯ --- */
 .nav-list {
     display: flex;
     gap: 20px;
@@ -54,6 +54,7 @@ a {
 .nav-link {
     font-weight: 500;
     letter-spacing: 0.02em;
+    line-height: 1.5;
     color: #2e2f42;
     transition: color 0.3s ease;
 }
@@ -63,24 +64,26 @@ a {
     color: #404bbf;
 }
 
+/* --- ГЕРОЙ СЕКЦІЯ --- */
 .hero {
+    background-color: #2e2f42;
+    padding: 80px 20px;
     text-align: center;
-    padding: 60px 20px;
-    background-color: #e3f2fd;
+    color: #ffffff;
 }
 
 .hero-title {
     font-size: 56px;
+    font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    color: #2e2f42;
-    margin-bottom: 20px;
+    color: #ffffff;
 }
 
 .btn {
     background-color: #4d5ae5;
-    color: #fff;
-    padding: 10px 20px;
+    color: #ffffff;
+    padding: 12px 24px;
     font-size: 16px;
     border: none;
     border-radius: 5px;
@@ -97,68 +100,140 @@ a {
     background-color: #404bbf;
 }
 
-.team,
-.portfolio {
+/* --- СЕКЦІЯ TEAM --- */
+.team {
+    background-color: #F4F4FD;
     padding: 40px 20px;
     text-align: center;
 }
 
 .section-title {
     font-size: 36px;
+    font-weight: 700;
     line-height: 1.11;
     letter-spacing: 0.02em;
     color: #2e2f42;
     margin-bottom: 30px;
+    text-transform: capitalize;
 }
 
-.team-list,
-.portfolio-list {
+.list-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+}
+
+.list-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+.team-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
     justify-content: center;
+    gap: 20px;
 }
 
-.team-item,
-.portfolio-item {
-    flex: 1 1 calc(25% - 20px);
-    max-width: 260px;
+.team-item {
     background-color: #fff;
     padding: 20px;
+    text-align: center;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.team-photo,
-.portfolio-image {
+.team-photo {
     width: 100%;
-    border-radius: 10px;
     margin-bottom: 15px;
+    border-radius: 50%;
 }
 
-.team-name,
-.portfolio-title {
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 5px;
+.team-name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
     color: #2e2f42;
 }
 
-.team-role,
+.team-role {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+/* --- СЕКЦІЯ PORTFOLIO --- */
+.portfolio {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.portfolio-item {
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.portfolio-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #2e2f42;
+    margin: 10px 0 5px;
+}
+
 .portfolio-category {
     font-size: 14px;
     color: #666;
+    letter-spacing: 0.02em;
 }
 
 .footer {
     background-color: #2e2f42;
-    padding: 20px;
-    color: #f4f4fd;
+    padding: 40px 0;
     text-align: center;
+}
+
+.footer-logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.footer-span {
+    color: #f4f4fd;
 }
 
 .footer-text {
     font-size: 14px;
     line-height: 1.5;
+    color: #f4f4fd;
     letter-spacing: 0.02em;
+    max-width: 300px;
+    margin: 0 auto;
 }
