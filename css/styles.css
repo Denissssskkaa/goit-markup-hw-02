@@ -205,7 +205,10 @@ button {
 .portfolio-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    /* 3 колонки */
     gap: 20px;
+    /* Відстань між елементами */
+    justify-content: center;
 }
 
 .portfolio-item {
