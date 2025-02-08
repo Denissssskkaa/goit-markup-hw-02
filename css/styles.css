@@ -243,10 +243,10 @@ button {
     background-color: #2e2f42;
     color: #fff;
     text-align: left;
-    /* Вирівнювання тексту ліворуч */
+    /* Гарантоване вирівнювання тексту ліворуч */
     position: relative;
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-    /* Хвилястий зріз */
+    /* Хвилястий фон */
 }
 
 .footer-title {
@@ -254,6 +254,8 @@ button {
     font-weight: bold;
     margin-bottom: 10px;
     text-transform: uppercase;
+    display: block;
+    /* Встановлюємо заголовок як блоковий елемент */
 }
 
 .footer-title .highlight {
@@ -265,4 +267,6 @@ button {
     font-size: 16px;
     line-height: 1.5;
     max-width: 500px;
+    margin: 0;
+    /* Забезпечує нульовий відступ */
 }
