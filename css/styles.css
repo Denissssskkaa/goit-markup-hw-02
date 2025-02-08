@@ -1,22 +1,24 @@
-/* Normalize & Base Styles */
+/* Base Reset & Normalize */
 body {
     font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f7f7f7;
     color: #333;
+    line-height: 1.5;
 }
 
 h1,
 h2,
-h3 {
+h3,
+p {
     margin: 0;
 }
 
 ul {
     list-style: none;
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 
 a {
@@ -25,11 +27,20 @@ a {
 }
 
 button {
-    cursor: pointer;
     font-family: inherit;
+    cursor: pointer;
+    border: none;
+    outline: none;
 }
 
-/* Header Styles */
+/* Container */
+.container {
+    max-width: 1128px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
 .header {
     display: flex;
     justify-content: space-between;
@@ -80,7 +91,8 @@ button {
 .hero {
     text-align: center;
     padding: 60px 20px;
-    background-color: #e3f2fd;
+    background-color: #2e2f42;
+    color: #fff;
 }
 
 .hero-title {
@@ -94,7 +106,6 @@ button {
     color: #fff;
     padding: 10px 20px;
     font-size: 16px;
-    border: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
@@ -113,6 +124,7 @@ button {
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 30px;
+    color: #434455;
 }
 
 .advantages-list {
@@ -170,6 +182,8 @@ button {
 .team-photo {
     border-radius: 50%;
     margin-bottom: 15px;
+    width: 100%;
+    max-width: 120px;
 }
 
 .team-name {
@@ -189,19 +203,21 @@ button {
 }
 
 .portfolio-list {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    justify-content: center;
 }
 
 .portfolio-item {
-    flex: 1 1 calc(33.33% - 20px);
-    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .portfolio-image {
     width: 100%;
+    max-width: 320px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
@@ -209,4 +225,10 @@ button {
 
 .portfolio-image:hover {
     transform: scale(1.05);
+}
+
+.portfolio-caption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
 }
