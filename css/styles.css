@@ -236,14 +236,31 @@ button {
     color: #555;
 }
 
+/* Footer Section in Portfolio */
 .portfolio-footer {
     margin-top: 40px;
     text-align: center;
-    font-size: 16px;
-    color: #666;
+    padding: 20px 0;
+    background-color: #2e2f42;
+    /* Темний фон */
+    color: #fff;
+    /* Білий текст */
 }
 
-.portfolio-footer p:first-child {
+.footer-title {
+    font-size: 20px;
     font-weight: bold;
-    color: #2e2f42;
+    margin-bottom: 10px;
+    /* Розрив між заголовком і текстом */
+    text-transform: uppercase;
+    /* Великі літери */
+}
+
+.footer-text {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 600px;
+    /* Обмеження ширини тексту */
+    color: #ddd;
 }
