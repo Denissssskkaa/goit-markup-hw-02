@@ -1,6 +1,27 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #fff;
+    color: #434455;
+}
 a {
     text-decoration: none;
 }
-ul,ol {
+ul,
+ol {
     list-style-type: none;
+}
+.address-head {
+    font-style: normal
+}
+.logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+}
+.logo-text {
+    color: #2e2f42;
 }
